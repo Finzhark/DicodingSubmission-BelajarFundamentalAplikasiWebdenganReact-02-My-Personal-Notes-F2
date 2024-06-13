@@ -35,7 +35,6 @@ class DetailPage extends Component {
 
       this.isNoteArchivedHandler = this.isNoteArchivedHandler.bind(this)
       this.onDeleteHandler = this.onDeleteHandler.bind(this)
-      this.onEditHandler = this.onEditHandler.bind(this);
    }
 
    async componentDidMount() {
@@ -80,7 +79,6 @@ class DetailPage extends Component {
                   archived={this.state.note.archived}
                   isArchived={this.isNoteArchivedHandler}
                   onDelete={this.onDeleteHandler}
-                  onEdit={this.onEditHandler} 
                />
             </section>
          )
