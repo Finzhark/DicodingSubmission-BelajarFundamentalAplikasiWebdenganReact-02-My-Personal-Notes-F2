@@ -63,10 +63,6 @@ class DetailPage extends Component {
       this.props.navigate('/')
    }
 
-   async onEditHandler(id) {
-		this.props.navigate(`/notes/${id}/edit`)
-	}
-
    render() {
       if (this.state.initializing) {
          return null
@@ -75,7 +71,9 @@ class DetailPage extends Component {
       if (this.state.note) {
          return (
             <section className='detail-page'>
-               <Link to='/'><FaCircleArrowLeft /> Kembali</Link>
+               <Link to='/'>
+                  <FaCircleArrowLeft /> Kembali
+               </Link>
                <DetailPageBody note={this.state.note} />
                <DetailPageAction
                   id={this.props.id}
