@@ -33,24 +33,22 @@ function LoginInput({
 				onChange={onEmailChange}
 			/>
 			<div className="inside-input-field">
-			<InputField
-				type={showPassword ? 'text' : 'password'}
-				name='password'
-				label='Password'
-				value={password}
-				onChange={onPasswordChange}
-				placeholder='Password'
-			/>
-			<button
-				className='toggle-password'
-				onClick={() => setShowPassword(!showPassword)}
-			>
-				{showPassword 
-					? <FaEyeSlash /> 
-					: <FaEye/>
-				}
-			</button>
-
+				<InputField
+					type={showPassword ? 'text' : 'password'}
+					name='password'
+					label='Password'
+					value={password}
+					onChange={onPasswordChange}
+				/>
+				<p
+					className='toggle-password'
+					onClick={() => setShowPassword(!showPassword)}
+				>
+					{showPassword 
+						? <FaEyeSlash /> 
+						: <FaEye/>
+					}
+				</p>
 			</div>
 			<button 
 				className='button-login'
