@@ -39,12 +39,12 @@ function LoginInput({
 				value={password}
 				onChange={onPasswordChange}
 			>
-			<button
+			<p
 				className='toggle-password'
 				onClick={() => setShowPassword(!showPassword)}
 			>
 				{showPassword ? <FaEyeSlash /> : <FaEye/>}
-			</button>
+			</p>
 			</InputField>
 			<button 
 				className='button-login'
