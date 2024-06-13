@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import parse from'html-react-parser'
+import parse from 'html-react-parser'
 import { showFormattedDate } from '../utils/index'
 
 function DetailPageBody({ 

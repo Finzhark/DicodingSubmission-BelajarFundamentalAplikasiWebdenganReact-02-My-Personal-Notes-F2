@@ -10,7 +10,11 @@ function AddPage() {
     navigate('/')
   }
 
-  return <NoteInput addNote={onAddNoteHandler} />
+  return (
+    <NoteInput 
+      addNote={onAddNoteHandler} 
+    />
+  )
 }
 
 export default AddPage

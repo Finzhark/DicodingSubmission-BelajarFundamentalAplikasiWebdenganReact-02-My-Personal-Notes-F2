@@ -1,9 +1,9 @@
+import { useContext } from 'react'
+import PropTypes from 'prop-types'
 import { toast } from 'react-hot-toast'
 import { BiHappyBeaming } from 'react-icons/bi'
-import PropTypes from 'prop-types'
-import { useContext } from 'react'
-import LocaleContext from '../contexts/LocaleContexts'
 import { MdOutlineDeleteForever } from 'react-icons/md'
+import LocaleContext from '../contexts/LocaleContexts'
 
 function DeleteButton({ 
 	id, 

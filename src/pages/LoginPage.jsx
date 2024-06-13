@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import LoginInput from '../components/LoginInput'
-import LocaleContext from '../contexts/LocaleContexts'
-import { login } from '../api'
 import PropTypes from 'prop-types'
+import { login } from '../api'
+import LocaleContext from '../contexts/LocaleContexts'
+import LoginInput from '../components/LoginInput'
 
 function LoginPage({ loginSuccess }) {
 	const { locale } = useContext(LocaleContext)

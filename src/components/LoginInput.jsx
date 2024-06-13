@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types'
-import InputField from './InputField'
-import useInput from '../hooks/useInput'
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useContext, useState } from 'react'
+import PropTypes from 'prop-types'
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import useInput from '../hooks/useInput'
 import LocaleContext from '../contexts/LocaleContexts'
+import InputField from './InputField'
 
 function LoginInput({ 
 	login 

@@ -1,12 +1,12 @@
 import { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { toast } from 'react-hot-toast'
 import { FaRegFaceSadTear } from 'react-icons/fa6'
-import LocaleContext from '../contexts/LocaleContexts'
-import useInput from '../hooks/useInput'
 import { FiCheck } from 'react-icons/fi'
 import { HiX, HiCheck } from 'react-icons/hi'
-import { Link } from 'react-router-dom'
-import { toast } from 'react-hot-toast'
+import LocaleContext from '../contexts/LocaleContexts'
+import useInput from '../hooks/useInput'
 
 function NoteInput({ 
   addNote 

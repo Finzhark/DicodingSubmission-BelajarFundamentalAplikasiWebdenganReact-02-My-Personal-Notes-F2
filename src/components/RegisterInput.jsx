@@ -1,8 +1,8 @@
+import { useContext, useState } from 'react'
 import PropTypes from 'prop-types'
+import { toast } from 'react-hot-toast'
 import useInput from '../hooks/useInput'
 import InputField from './InputField'
-import { useContext, useState } from 'react'
-import { toast } from 'react-hot-toast'
 
 function RegisterInput({ register }) {
 	const [name, onNameChange] = useInput('')

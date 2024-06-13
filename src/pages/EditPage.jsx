@@ -1,7 +1,7 @@
 import React from 'react';
-import NoteEdit from '../components/NoteEdit';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getNote, editNote } from '../utils/local-data';
+import NoteEdit from '../components/NoteEdit';
 
 function EditPage() {
   const navigate = useNavigate();

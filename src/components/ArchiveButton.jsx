@@ -1,8 +1,8 @@
+import { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { toast } from 'react-hot-toast'
-import { useContext } from 'react'
-import LocaleContext from '../contexts/LocaleContexts'
 import { BiArchiveIn, BiArchiveOut } from 'react-icons/bi'
+import LocaleContext from '../contexts/LocaleContexts'
 
 function ArchiveButton({ 
 	id, 

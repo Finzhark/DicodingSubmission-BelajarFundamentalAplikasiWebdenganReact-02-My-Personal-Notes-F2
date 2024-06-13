@@ -1,6 +1,6 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { FiPlus } from 'react-icons/fi'
-import { useContext } from 'react'
 import LocaleContext from '../contexts/LocaleContexts'
 
 function HomePageAction() {

@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import RegisterInput from '../components/RegisterInput'
 import { Link, useNavigate } from 'react-router-dom'
 import { register } from '../api'
+import RegisterInput from '../components/RegisterInput'
 import LocaleContext from '../contexts/LocaleContexts'
 
 function RegisterPage() {

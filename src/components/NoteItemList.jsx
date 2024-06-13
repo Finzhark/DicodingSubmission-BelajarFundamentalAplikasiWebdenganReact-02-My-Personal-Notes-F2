@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import PropTypes from 'prop-types'
-import NoteItem from './NoteItem'
 import LocaleContext from '../contexts/LocaleContexts'
+import NoteItem from './NoteItem'
 
 function NoteItemList({ notes }) {
   const { locale } = useContext(LocaleContext)

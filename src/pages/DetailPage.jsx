@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import PropTypes from 'prop-types'
 import { useNavigate, useParams } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import DetailPageAction from '../components/DetailPageAction'
 import DetailPageBody from '../components/DetailPageBody'
 import {

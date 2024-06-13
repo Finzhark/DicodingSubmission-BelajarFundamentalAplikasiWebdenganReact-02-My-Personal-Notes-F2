@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import NoteItemList from '../components/NoteItemList'
-import NoteSearch from '../components/NoteSearch'
+import { getArchivedNotes } from '../api'
 import LocaleContext from '../contexts/LocaleContexts'
 import { searchNotes } from '../utils/local-data'
-import { getArchivedNotes } from '../api'
+import NoteItemList from '../components/NoteItemList'
+import NoteSearch from '../components/NoteSearch'
 
 function ArchivePage() {
   const [searchParams, setSearchParams] = useSearchParams()

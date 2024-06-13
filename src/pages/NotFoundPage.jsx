@@ -1,6 +1,6 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { HiHome } from 'react-icons/hi2'
-import { useContext } from 'react'
 import LocaleContext from '../contexts/LocaleContexts'
 
 function NotFoundPage() {

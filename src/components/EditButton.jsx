@@ -1,5 +1,5 @@
-import { MdModeEdit } from 'react-icons/md';
 import PropTypes from 'prop-types';
+import { MdModeEdit } from 'react-icons/md';
 
 function EditButton({
   id,
