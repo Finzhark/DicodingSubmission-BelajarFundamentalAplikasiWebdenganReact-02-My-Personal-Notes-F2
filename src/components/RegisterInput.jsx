@@ -48,9 +48,7 @@ function RegisterInput({ register }) {
 				label='Password'
 				value={password}
 				onChange={onPasswordChange}
-			>
-				
-			</InputField>
+			/>
 			<button
 				className='toggle-password'
 				onClick={() => setShowPassword(!showPassword)}
