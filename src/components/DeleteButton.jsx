@@ -24,7 +24,10 @@ function DeleteButton({
           onClick={() => {
             onDelete(id)
             toast.remove()
-            toast('Catatan berhasil dihapus!', {
+            toast(locale === 'id'
+              ? 'Catatan berhasil dihapus!'
+              : 'The note was deleted successfully.'
+            , {
               icon: <MdOutlineDeleteForever />,
               duration: 1000,
             })
@@ -36,7 +39,10 @@ function DeleteButton({
           className='toast_button btn-cancel'
           onClick={() => {
             toast.remove()
-            toast('Tenang, catatannya masih ada!', {
+            toast(locale === 'id' 
+              ? 'Tenang, catatannya masih ada!'
+              : 'Relax, your note is still here.'
+            , {
               duration: 1000,
               icon: <BiHappyBeaming />,
             })
