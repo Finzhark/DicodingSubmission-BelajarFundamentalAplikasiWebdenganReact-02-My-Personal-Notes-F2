@@ -49,6 +49,8 @@ function RegisterInput({ register }) {
 				value={password}
 				onChange={onPasswordChange}
 			>
+				
+			</InputField>
 			<button
 				className='toggle-password'
 				onClick={() => setShowPassword(!showPassword)}
@@ -57,9 +59,7 @@ function RegisterInput({ register }) {
 				? (<FaEyeSlash />)
 				: (<FaEye/>)
 			}
-			</button>				
-			</InputField>I
-			
+			</button>			
 			<InputField
 				type='password'
 				name='confirmPassword'
