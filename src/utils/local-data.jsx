@@ -1,3 +1,5 @@
+import LocaleContext from "../contexts/LocaleContexts";
+
 let notes = [
   {
     id: 'notes-1',
@@ -63,9 +65,10 @@ function getArchivedNotes() {
 }
 
 function addNote({ title, body }) {
+  const { locale } = useContext(LocaleContext)
   notes = [...notes, {
     id: `notes-${+new Date()}`, 
-    title: title || '(untitled)', 
+    title: title || locale === 'id' ? 'Belum Berjudul' : 'Untitled', 
     body, 
     createdAt: new Date().toISOString(), 
     archived: false,
