@@ -24,7 +24,7 @@
 }
 
 [data-theme="light"] {
-  --background: #DDDDDD;
+  --background: rgba(237, 230, 221, 1);
   --background-image: 
   linear-gradient(180deg,
   rgba(237, 230, 221, 1),
@@ -288,9 +288,14 @@ main {
 }
 
 .toggle-password {
+  position: absolute;
+  font-size: 30px;
+  top: 5.5vh;
+  right: 0vw;
+}
+
+.inside-input-field {
   position: relative;
-  top: -10vh;
-  right: -75vw;
 }
 
 .input-login, 
@@ -433,16 +438,37 @@ main {
   .detail-page__title { 
     font-size: 64px;
   }
+
+  .toggle-password {
+    position: absolute;
+    font-size: 30px;
+    top: 3.3vh;
+    right: 0vw;
+  }
 }
 
 @media screen and (min-width: 850px) {
   .notes-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .toggle-password {
+    position: absolute;
+    font-size: 30px;
+    top: 3vh;
+    right: 0vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .notes-list {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .toggle-password {
+    position: absolute;
+    font-size: 30px;
+    top: 6vh;
+    right: 0vw;
   }
 }

@@ -4,14 +4,14 @@ import { getUserLogged, putAccessToken } from "./api";
 import { LocaleProvider } from "./contexts/LocaleContexts";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
-import HomePage from "./pages/HomePage";
-import ArchivePage from "./pages/ArchivePage";
-import AddPage from "./pages/AddPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import DetailPage from "./pages/DetailPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import HomePage from "./pages/HomePage";
+import AddPage from "./pages/AddPage";
+import DetailPage from "./pages/DetailPage";
 import EditPage from "./pages/EditPage";
+import ArchivePage from "./pages/ArchivePage";
+import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
 
 function App() {

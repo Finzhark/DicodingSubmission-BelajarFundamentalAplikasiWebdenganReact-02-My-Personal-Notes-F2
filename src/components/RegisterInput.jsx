@@ -55,8 +55,13 @@ function RegisterInput({ register }) {
 				label='Confirm Password'
 				value={confirmPassword}
 				onChange={onConfirmPasswordChange}
-			/>			
-			<button type='button' onClick={onSubmitHandler}>
+			/>
+			
+			<button 
+				className='button-register'
+				type='button'
+				onClick={onSubmitHandler}
+			>
 				Register
 			</button>
 		</div>

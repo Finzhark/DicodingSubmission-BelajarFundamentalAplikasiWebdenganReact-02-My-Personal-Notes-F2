@@ -23,9 +23,9 @@ function LoginPage({ loginSuccess }) {
 			<p>
 				{locale === 'id'? (
 					<span>
-						Belum punya akun?
+						Belum punya akun? 
 						<Link to='/register'>
-							<b>Daftar di sini!</b>
+							<b> Daftar di sini!</b>
 						</Link>
 					</span>		
 				) : (
