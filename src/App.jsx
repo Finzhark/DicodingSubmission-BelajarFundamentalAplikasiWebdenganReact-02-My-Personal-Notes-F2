@@ -113,7 +113,7 @@ function App() {
               <Route path="/archive" element={<ArchivePage />} />
               <Route path="/notes/new" element={<AddPage />} />
               <Route path="/notes/:id" element={<DetailPage />} />
-              <Route path="/notes/edit/:id" element={<EditPage />} />
+              <Route path="/notes/:id/edit" element={<EditPage />} />
             </Routes>
           </main>
           <Footer />

@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import { MdModeEdit } from 'react-icons/md';
+import LocaleContext from '../contexts/LocaleContexts';
 
 function EditButton({
   id,
   onEdit
 }) {
+  const { locale } = useContext(LocaleContext)
+
   const onEditHandler = () => {
     onEdit(id)
   }
@@ -13,10 +16,10 @@ function EditButton({
     <button 
       className="action" 
       type='button' 
-      title={locale === 'id'
-        ? 'Sunting'
-        : 'Edit'
-      } 
+      // title={locale === 'id'
+      //   ? 'Sunting'
+      //   : 'Edit'
+      // } 
       onClick={onEditHandler}
     >
       <MdModeEdit />

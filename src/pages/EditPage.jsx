@@ -10,7 +10,7 @@ function EditPage() {
 
   function onEditNoteHandler(note) {
     editNote(note);
-    navigate('/');
+    navigate('/notes/edit/:id');
   }
 
   return (

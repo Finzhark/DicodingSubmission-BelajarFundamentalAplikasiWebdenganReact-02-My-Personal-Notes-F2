@@ -2,7 +2,8 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { MdGTranslate, MdOutlineWbSunny } from 'react-icons/md'
-import { RiLogoutCircleRLine, RiMoonLine } from 'react-icons/ri'
+import { RiMoonLine } from 'react-icons/ri'
+import { FiLogOut } from 'react-icons/fi';
 import { getAccessToken } from '../api'
 import LocaleContext from '../contexts/LocaleContexts'
 import ThemeContext from '../contexts/ThemeContext'
@@ -80,8 +81,12 @@ function Header({
 						type='button' 
 						onClick={logout}
 					>
-						{name}
-						<RiLogoutCircleRLine 
+						{locale === 'id'
+							? 'Halo, '
+							: 'Hello, '
+						}
+							{name}
+						<FiLogOut 
 							title='Logout?'
 						/>
 				 </button>

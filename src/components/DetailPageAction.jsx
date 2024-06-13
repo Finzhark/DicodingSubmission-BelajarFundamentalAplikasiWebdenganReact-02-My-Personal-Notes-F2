@@ -21,10 +21,10 @@ function DetailPageAction({
         id={id} 
         onDelete={onDelete} 
       />
-      {/* <EditButton 
+      <EditButton 
         id={id}
         onEdit={onEdit}
-      />       */}
+      />      
     </div>
   )
 }

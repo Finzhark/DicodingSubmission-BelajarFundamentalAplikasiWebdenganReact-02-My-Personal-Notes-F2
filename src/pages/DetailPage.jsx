@@ -1,16 +1,16 @@
 import { Component } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import DetailPageAction from '../components/DetailPageAction'
-import DetailPageBody from '../components/DetailPageBody'
+import { FaCircleArrowLeft } from "react-icons/fa6";
 import {
    getNote,
    deleteNote,
    unarchiveNote,
    archiveNote,
 } from '../api'
+import DetailPageAction from '../components/DetailPageAction'
+import DetailPageBody from '../components/DetailPageBody'
 import NotFoundPage from './NotFoundPage'
-import { Link } from 'react-router-dom'
 
 function DetailPageWrapper() {
    const { id } = useParams()
@@ -75,7 +75,7 @@ class DetailPage extends Component {
       if (this.state.note) {
          return (
             <section className='detail-page'>
-               {/* <Link to='/'><FaCircleArrowLeft />Kembali</Link> */}
+               <Link to='/'><FaCircleArrowLeft /> Kembali</Link>
                <DetailPageBody note={this.state.note} />
                <DetailPageAction
                   id={this.props.id}
