@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { login } from '../api'
 import LocaleContext from '../contexts/LocaleContexts'
-import LoginInput from '../components/LoginInput'
+import FormLogin from '../components/FormLogin'
 
 function LoginPage({ loginSuccess }) {
 	const { locale } = useContext(LocaleContext)
@@ -19,7 +19,7 @@ function LoginPage({ loginSuccess }) {
 	return (
 		<section className='login-page'>
 			<h2>Login</h2>
-			<LoginInput login={onLoginHandler} />
+			<FormLogin login={onLoginHandler} />
 			<p>
 				{locale === 'id'? (
 					<span>
@@ -32,7 +32,7 @@ function LoginPage({ loginSuccess }) {
 					<span>
 						Don't have an account?
 						<Link to='/register'>
-							<b>Register here!</b>
+							<b> Register here!</b>
 						</Link>
 					</span>
 				)}

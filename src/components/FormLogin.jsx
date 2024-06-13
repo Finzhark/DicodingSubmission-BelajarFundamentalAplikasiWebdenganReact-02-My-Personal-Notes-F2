@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import useInput from '../hooks/useInput'
 import LocaleContext from '../contexts/LocaleContexts'
-import InputField from './InputField'
+import InputFieldForm from './InputFieldForm'
 
-function LoginInput({ 
+function FormLogin({ 
 	login 
 }) {
 	const [showPassword, setShowPassword] = useState(false)
@@ -25,7 +25,7 @@ function LoginInput({
 			className='input-login' 
 			onSubmit={onSubmitHandler}
 		>
-			<InputField
+			<InputFieldForm
 				type='email'
 				name='email'
 				label='Email'
@@ -33,7 +33,7 @@ function LoginInput({
 				onChange={onEmailChange}
 			/>
 			<div className="inside-input-field">
-				<InputField
+				<InputFieldForm
 					type={showPassword ? 'text' : 'password'}
 					name='password'
 					label='Password'
@@ -60,8 +60,8 @@ function LoginInput({
 	)
 }
 
-LoginInput.propTypes = {
+FormLogin.propTypes = {
 	login: PropTypes.func.isRequired,
 }
 
-export default LoginInput
+export default FormLogin

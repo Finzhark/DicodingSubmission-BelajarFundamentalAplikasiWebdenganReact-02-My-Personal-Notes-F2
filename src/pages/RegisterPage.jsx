@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { register } from '../api'
-import RegisterInput from '../components/RegisterInput'
+import FormRegister from '../components/FormRegister'
 import LocaleContext from '../contexts/LocaleContexts'
 
 function RegisterPage() {
@@ -23,7 +23,7 @@ function RegisterPage() {
 					: 'Fill the form to register account.'
 				}
 			</h2>
-			<RegisterInput register={onRegisterHandler} />
+			<FormRegister register={onRegisterHandler} />
 			{locale === 'id' ? (
 				<p>
 					Sudah punya akun? 

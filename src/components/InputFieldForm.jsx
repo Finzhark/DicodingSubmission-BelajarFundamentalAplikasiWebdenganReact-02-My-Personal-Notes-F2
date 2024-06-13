@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-function InputField({ 
+function InputFieldForm({ 
 	type, 
 	name, 
 	label, 
@@ -22,7 +22,7 @@ function InputField({
 	)
 }
 
-InputField.propTypes = {
+InputFieldForm.propTypes = {
 	type: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
 	label: PropTypes.string.isRequired,
@@ -30,4 +30,4 @@ InputField.propTypes = {
 	onChange: PropTypes.func.isRequired,
 }
 
-export default InputField
+export default InputFieldForm

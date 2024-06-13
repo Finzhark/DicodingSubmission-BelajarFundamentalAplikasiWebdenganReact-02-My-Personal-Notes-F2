@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { toast } from 'react-hot-toast'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import useInput from '../hooks/useInput'
-import InputField from './InputField'
+import InputFieldForm from './InputFieldForm'
 
-function RegisterInput({ register }) {
+function FormRegister({ register }) {
 	const [name, onNameChange] = useInput('')
 	const [email, onEmailChange] = useInput('')
 	const [password, onPasswordChange] = useInput('')
@@ -30,14 +30,14 @@ function RegisterInput({ register }) {
 
 	return (
 		<div className='input-register'>
-			<InputField
+			<InputFieldForm
 				type='name'
 				name='name'
 				label='Name'
 				value={name}
 				onChange={onNameChange}
 			/>
-			<InputField
+			<InputFieldForm
 				type='email'
 				name='email'
 				label='Email'
@@ -45,7 +45,7 @@ function RegisterInput({ register }) {
 				onChange={onEmailChange}
 			/>
 			<div className="inside-input-field">
-				<InputField
+				<InputFieldForm
 					type={showPassword ? 'text' : 'password'}
 					name='password'
 					label='Password'
@@ -64,7 +64,7 @@ function RegisterInput({ register }) {
 			</div>
 
 			<div className="inside-input-field">
-				<InputField
+				<InputFieldForm
 					type={showConfirmPassword ? 'text' : 'password'}
 					name='confirmPassword'
 					label='Confirm Password'
@@ -93,8 +93,8 @@ function RegisterInput({ register }) {
 	)
 }
 
-RegisterInput.propTypes = {
+FormRegister.propTypes = {
 	register: PropTypes.func.isRequired,
 }
 
-export default RegisterInput
+export default FormRegister
