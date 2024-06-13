@@ -48,32 +48,14 @@ function RegisterInput({ register }) {
 				label='Password'
 				value={password}
 				onChange={onPasswordChange}
-			/>
-			<button
-				className='toggle-password'
-				onClick={() => setShowPassword(!showPassword)}
-			>
-			{showPassword 
-				? (<FaEyeSlash />)
-				: (<FaEye/>)
-			}
-			</button>			
+			/>		
 			<InputField
 				type='password'
 				name='confirmPassword'
 				label='Confirm Password'
 				value={confirmPassword}
 				onChange={onConfirmPasswordChange}
-			/>
-			<button
-				className='toggle-password'
-				onClick={() => setShowPassword(!showPassword)}
-			>
-			{showPassword 
-				? (<FaEyeSlash />)
-				: (<FaEye/>)
-			}
-			</button>			
+			/>			
 			<button type='button' onClick={onSubmitHandler}>
 				Register
 			</button>
