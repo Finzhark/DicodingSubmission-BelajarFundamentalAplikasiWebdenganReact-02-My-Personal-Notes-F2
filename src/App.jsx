@@ -83,7 +83,7 @@ function App() {
       <LocaleProvider value={localeContextValue}>
         <ThemeProvider value={themeContextValue}>
           <div className='app-container'>
-            <Header logoutx={onLogout} />
+            <Header logout={onLogout} />
             <main>
               <Routes>
                 <Route

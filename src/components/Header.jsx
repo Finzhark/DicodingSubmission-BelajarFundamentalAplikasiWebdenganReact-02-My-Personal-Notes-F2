@@ -98,8 +98,8 @@ function Header({
 }
 
 Header.propTypes = {
-   logout: PropTypes.func,
-   name: PropTypes.string,
+	logout : PropTypes.func,
+  name: PropTypes.string,
 }
 
 export default Header
