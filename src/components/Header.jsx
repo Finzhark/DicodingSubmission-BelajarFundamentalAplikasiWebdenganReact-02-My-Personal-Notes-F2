@@ -98,7 +98,7 @@ function Header({
 }
 
 Header.propTypes = {
-   logout: PropTypes.func.isRequired,
+   logout: PropTypes.func,
    name: PropTypes.string,
 }
 
